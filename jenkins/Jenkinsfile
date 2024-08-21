@@ -1,0 +1,21 @@
+pipeline {
+    agent none
+    stages {
+        stage('Linux example') {
+            agent any
+            options {
+                // Timeout counter starts BEFORE agent is allocated
+                timeout(time: 1, unit: 'SECONDS')
+            }
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Windows example') {
+            agent 'BRAVO15'
+            steps {
+                bat 'scrips/s1.bat'
+            }
+        }
+    }
+}
