@@ -1,6 +1,5 @@
 name: Actions Runner Controller Demo
-on:
-  workflow_dispatch:
+on: [push]
 
 jobs:
   Explore-GitHub-Actions:
@@ -8,3 +7,4 @@ jobs:
     runs-on: arc-runner-set
     steps:
     - run: echo "🎉 This job uses runner scale set runners!"
+    - run: sl
