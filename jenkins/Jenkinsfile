@@ -12,7 +12,11 @@ pipeline {
             }
         }
         stage('Windows example') {
-            agent 'BRAVO15'
+            agent {
+                node {
+                    label 'windows10'
+                }
+            }
             steps {
                 bat 'scrips/s1.bat'
             }
