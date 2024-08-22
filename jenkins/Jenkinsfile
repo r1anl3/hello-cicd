@@ -17,7 +17,7 @@ pipeline {
                 }
             }
             steps {
-                scrip {
+                script {
                     bat 'scrips/s1.bat'
                 }
             }
