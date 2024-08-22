@@ -2,19 +2,25 @@ pipeline {
     agent any
     stages {
         stage('Linux example') {
+            options {
+                // Timeout counter starts BEFORE agent is allocated
+                timeout(time: 1, unit: 'SECONDS')
+            }
             steps {
                 echo 'Hello World'
             }
         }
-        // stage('Windows example') {
-        //     agent {
-        //         node {
-        //             label 'windows10'
-        //         }
-        //     }
-        //     steps {
-        //         bat 'scrips/s1.bat'
-        //     }
-        // }
+        stage('Windows example') {
+            agent {
+                node {
+                    label 'windows10'
+                }
+            }
+            steps {
+                scrip {
+                    bat 'scrips/s1.bat'
+                }
+            }
+        } 
     }
 }
