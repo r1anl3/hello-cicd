@@ -21,7 +21,7 @@ pipeline {
                 script {
                     echo "The workspace is ${env.WORKSPACE}"	
                     bat "dir"
-                    bat "scripts\\s1.bat"
+                    bat "jenkins\\scripts\\s1.bat"
                 }
             }
         } 
