@@ -11,15 +11,15 @@ pipeline {
                 echo 'Hello World'
             }
         }
-        stage('Windows example') {
-            agent {
-                node {
-                    label 'windows10'
-                }
-            }
-            steps {
-                bat 'scrips/s1.bat'
-            }
-        }
+        // stage('Windows example') {
+        //     agent {
+        //         node {
+        //             label 'windows10'
+        //         }
+        //     }
+        //     steps {
+        //         bat 'scrips/s1.bat'
+        //     }
+        // }
     }
 }
