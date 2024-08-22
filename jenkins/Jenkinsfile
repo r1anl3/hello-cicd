@@ -19,7 +19,7 @@ pipeline {
             }
             steps {
                 script {
-                    bat '.\\scripts\\s1.bat'
+                    bat '\\scripts\\s1.bat'
                 }
             }
         } 
