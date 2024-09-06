@@ -1,1 +1,1 @@
-- [] create ansible playbook to install kubectl,... on azure vm
+- [ ] create ansible playbook to install kubectl,... on azure vm
