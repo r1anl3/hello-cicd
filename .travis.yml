@@ -1,9 +1,7 @@
-language: python
+language: bash
 
-python:
+before_script:
+    - curl -L "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/shunit2/shunit2-2.1.6.tgz" | tar zx
 
-  - "3.7"
-
-script: 
-
-  - python hello_world.py
+script:
+    - bash scripts/show_specs.sh
