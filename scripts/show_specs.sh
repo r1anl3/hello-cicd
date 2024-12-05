@@ -16,6 +16,6 @@ echo "Show CPU(s) info"
 grep "model name" /proc/cpuinfo
 
 echo "Show info about disk sda"
-hdparm -i /dev/sda
+df -h /
 
 exit 1
