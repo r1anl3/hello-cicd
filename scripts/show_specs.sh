@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "Show hostname"
+hostname
+
 echo "Show kernel version and system architecture"
 uname -a 
 
