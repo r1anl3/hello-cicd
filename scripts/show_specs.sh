@@ -17,5 +17,3 @@ grep "model name" /proc/cpuinfo
 
 echo "Show info about disk sda"
 df -h /
-
-exit 1

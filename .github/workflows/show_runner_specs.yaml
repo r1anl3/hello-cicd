@@ -1,0 +1,8 @@
+name: Show GitHub Actions Specs
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: workflow_dispatch
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: scripts/show_specs.sh
