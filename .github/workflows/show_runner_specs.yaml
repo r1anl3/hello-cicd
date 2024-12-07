@@ -5,4 +5,4 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run:  ${GITHUB_WORKSPACE}/scripts/show_specs.sh
+      - run:  ./scripts/show_specs.sh
